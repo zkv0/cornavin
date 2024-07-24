@@ -1,0 +1,887 @@
+body{
+  font-family: 'montserrat';
+  margin: 0%;
+  padding: 0%;
+
+}
+
+ /*estilos del menu*/
+.nav1{
+    background-color:#535633;
+    margin-top: 0%; /* Lo sitúa en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 20%;
+    padding: 18px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    display: flex;
+
+}
+/*imagen del menu*/
+.logoheader{
+    width: 85px;
+    height: 82px;
+    float: left;
+    margin-left: 15%;
+    position: absolute;
+    z-index: 100000000000;
+}
+ /* Estilos para el menú de navegación */
+ nav ul li {
+    position: relative; /* Establecer posición relativa para el elemento li */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #efebe4; /* Color del texto del enlace */
+    font-weight: bold; /* Negrita */
+    font-family: 'montserrat'; /* Fuente */
+    font-size: 1.1em; /* Tamaño del texto del enlace */
+    position: relative; /* Establecer posición relativa para el enlace */
+}
+
+nav ul li a::before {
+    content: ''; /* Agregar contenido pseudo-elemento */
+    position: absolute; /* Establecer posición absoluta */
+    top: 18px; /* Alinear al tope */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Anchura del 100% */
+    height: 2px; /* Altura de la línea */
+    background-color: rgb(239, 232, 232); /* Color de la línea */
+    transform: scaleX(0); /* Escalar la línea en el eje X a 0 */
+    transform-origin: left; /* Establecer origen de transformación a la izquierda */
+    transition: transform 0.3s ease; /* Transición de la transformación */
+  }
+
+  nav ul li a:hover::before {
+    transform: scaleX(1); /* Escalar la línea en el eje X a 1 (100%) */
+  }
+
+  nav {
+    text-align: center; /* Centrar los elementos del menú */
+    padding: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    display: inline; /* Mostrar los elementos en línea */
+    margin-right: 50px; /* Margen derecho entre elementos */
+  }
+
+  nav ul li a:hover {
+    color: #b1b682; /* Cambiar color del texto al pasar el ratón */
+  }
+ /* Termina el menu*/
+
+body{
+    background-color: #efebe4;
+}
+
+/*estilos del boton flotante del whasAPP*/
+.whatsapp-float {
+  position: fixed; /* Fija el botón en la ventana del navegador */
+  bottom: 20px; /* Distancia desde el borde inferior */
+  right: 20px; /* Distancia desde el borde derecho */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+.whatsapp-float img {
+  width: 60px; /* Ajusta el tamaño del icono de WhatsApp */
+  height: auto;
+  border-radius: 50%; /* Para que el botón tenga forma de círculo */
+}
+/*termina los estilos del boton flotante*/
+
+  p{
+  font-size: 24px;
+  }
+
+  .TITULO1 {
+  font-size: 20px;
+  }
+
+  /* Estilos del banner principal */
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 560px;
+    margin-top: -20px;
+   
+}
+.banner-images {
+    display: flex;
+    width: 215%; /* Ancho igual al número de imágenes multiplicado por 100% */
+    height: 210%;
+    animation: desplazamientoImagenes 4s infinite; /* Duración, tipo de movimiento y número de repeticiones */
+}
+.banner-images img {
+    width: 80%;
+    height: 55%;
+}
+.recuadro {
+    opacity: 100%;
+    margin-bottom: 30px;
+    width: 666px; /* Ancho del recuadro */
+    height: 40px; /* Altura del recuadro */
+    background-color: rgba(244, 238, 238, 0.5); /* Fondo semi-transparente */
+    padding: 5px; /* Espacio dentro del recuadro */
+    border: 0px solid #535633; /* Borde del recuadro */
+    border-radius: 0px; /* Bordes redondeados */
+}
+.tipri{
+    font-weight: bold;
+    font-style: italic;
+    font-weight: bold;
+    font-style: italic;
+    font-family: montserrat;
+    font-size: 30px;
+    color: #535633;
+}
+.recuadro p {
+    margin: 0; /* Eliminar los márgenes predeterminados del párrafo */
+}
+
+.banner-content {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+@keyframes desplazamientoImagenes {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-50%);
+    }
+    58% {
+        transform: translateX(-50%);
+    }
+    67% {
+        transform: translateX(-50%);
+    }
+    92% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.explore-button {
+    background-color: #535633;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.explore-button:hover {
+    background-color: #929671;
+}
+
+
+/* Estilos de las colecciones destacadas */
+.product-carousel {
+    background-color: #f6e6d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    margin-top: -20px;
+}
+.carousel-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: MONTSERRAT;
+    height: 70px;
+  }
+.carousel-title2 {
+    color: #ecd8b9;
+    background-color: #f6e6d1;
+    margin-bottom: 5px;
+    height: 55px;
+}
+.titupro{ 
+    background-color: #f6e6d1;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.carousel-item {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Para asegurar que la imagen no se salga del contenedor */
+}
+
+.carousel-item img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 87%;
+    height: 90%;
+    transition: transform 0.5s ease; /* Añade una transición suave para el zoom */
+}
+.im1{
+    width: 340px;
+    height: 450px;
+}
+
+
+.carousel-item:hover img {
+    transform: scale(1.1); /* Efecto de zoom */
+    filter: blur(3px); /* Efecto de difuminado */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(74, 71, 71, 0.5); /* Fondo semi-transparente */
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 0.5s ease; /* Transición suave para la opacidad */
+}
+
+.carousel-item:hover .overlay {
+    opacity: 1; /* Muestra el overlay al pasar el cursor */
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.category-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #efebe4;
+}
+
+.category-button {
+    position: absolute; /* Botón absoluto para permanecer visible */
+    bottom: 70px; /* Posición del botón */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #535633;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100px;
+    z-index: 1; /* Asegura que el botón esté encima de la imagen */
+}
+
+.category-button:hover {
+    background-color: #7d8159;
+}
+
+/*instagram feed*/
+.cuerpo {
+    background-color: #f6e6d1;
+}
+.instagram-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+   justify-content: center;
+}
+.instagram-feed a {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.instagram-feed a:hover {
+    transform: scale(1.05);
+}
+.instagram-feed img {
+    width: 100%;
+    height: 100%;
+}
+.instagram-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #535633;
+    color: white;
+    text-decoration: none;
+    border-radius: 1px;
+    font-family: montserrat;
+    font-size: 17px;
+    margin-left: 650px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+  }
+  .instagram-btn img {
+    width: 20px;
+    height: 20px;
+    margin-left: -5px;
+    margin-right: 5px;
+    background-position: center;
+    vertical-align: middle;
+  }
+  .instagram-btn:hover {
+    background-color: #7d8159;
+  }
+ 
+  
+
+/*testimonio*/
+  #testimonios {
+    background-color: #f6e6d1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#testimonios h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    font-family: MONTSERRAT;
+    height: 70px;
+}
+
+.testimonio {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0px;
+    margin-left: 30px;
+    margin-top: -25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonio img {
+    width: 285px;
+    height: 200px;
+    border-radius: 0%;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+
+.testimonio .cliente {
+    font-style: italic;
+    color: #555;
+    margin: 0 0 10px;
+    position: relative;
+    font-size: 18px;
+}
+
+/*Principio de nuestra historia*/
+.our-story {
+    background-color: #f6e6d1;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.our-story .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.our-story h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: -15px;
+    margin-top: 8px;
+    font-family: MONTSERRAT;
+    height: 70px;
+    color: #000000;
+}
+.our-story p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #0a0a0a;
+}
+
+.our-story .learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #efebe4;
+    background-color: #535633;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+    font-family: montserrat;
+}
+
+.our-story .learn-more:hover {
+    background-color: #929671;
+}
+
+/* Mapa */
+.map {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titmapa{
+    font-size: 25px;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    letter-spacing: .4em;
+    letter-spacing: .17em; 
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top:-50px;
+    color: #000000;
+    transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+    transition: transform 1.5s ease-in-out; /* Transición suave de transformación */
+}
+.map iframe {
+    width: 40%;
+    height: 250px;
+    border-radius: 0px;
+    border: 3px solid #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 55px;
+    float: left;
+}
+
+.ubicacion {
+    padding: 50px 0;
+    background-color: #f6e6d1;
+  }
+  
+  .contenedor-ubicacion {
+    max-width: 1200px;
+    height: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .informacion-ubicacion {
+    margin-top: 130px;
+  }
+  .informacion-ubicacion p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .servi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-serv {
+    background-color: #f6e6d1 ;
+  }
+
+  .ser_uno_p {
+    font-size: 18px;
+    font-weight: 200;
+    align-items: baseline;
+    line-height: 1.6;
+  }
+
+  .contenedor-ssdf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+/*personalizados y servicios*/
+  .otros-servicioss {
+    background-color: #f6e6d1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor-servicioss {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_serv {
+    width: 40%;
+    height: auto;
+  }
+
+  .button-serv {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .contenedor-personalizacion p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #0a0a0a;
+    margin-left: 80px;
+    margin-right: 15px;
+  }
+  .contenedor-personalizacion h2{
+    font-size: 22PX;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0a0a0a;
+    margin-top: -25PX;
+    margin-left: 80px;
+  }
+  
+  
+  .btn-personalizacion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #535633;
+    color: white;
+    text-decoration: none;
+    border-radius: 1px;
+    font-family: montserrat;
+    font-size: 17px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-personalizacion:hover {
+    background-color: #929671;
+  }
+  .contenedor-servicios h2{
+    font-size: 22PX;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0a0a0a;
+    margin-top: -25PX;
+  }
+ 
+  
+  
+  .servicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #0a0a0a;
+    margin-left: 20px;
+  }
+
+  .contenedor-flex {
+  display: flex;
+}
+
+.personalizacion,
+.otros-servicios {
+  flex: 1;
+}
+
+  
+
+ /*Estilos pie de pagina*/
+
+.column {
+  width: 30%;
+  height: -30%;
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.column img{
+width: 100px;
+height: 100px;
+margin-left: -300px;
+margin-top: 40px;
+margin-bottom: -10px;
+}
+.column h3 {
+margin-left: -10px;
+  margin-top: 60px;
+  font-size: 11px;
+}
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+.column ul li {
+  margin-bottom: 1px;
+  text-align: justify;
+ 
+}
+.column ul li a {
+  color: #efebe4;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: montserrat;
+}
+.column ul li a:hover {
+  text-decoration: none;
+}
+.clearfix {
+  clear: both;
+}
+h4{
+  color: #efebe4; 
+  margin-bottom: -25px;
+}
+h3{
+  color: #efebe4;
+}
+.sgn{
+margin-top: 260px;
+font-size: 11px;
+float: left;
+margin-left: -440px;
+margin-bottom: 40px;
+font-family: montserrat;
+}
+.text{
+text-align: -3pc;
+margin-top: 1px;
+font-size: 13px;
+float: left;
+font-family: montserrat;
+margin-left: 19px;
+text-align: justify;
+}
+.tli{
+margin-left: 150px;
+}
+.contata{
+margin-left: -300px ;
+font-size: 11PX;
+margin-top: 60px;
+}
+.terceco{
+margin-left: -1px;
+margin-top: 5px;
+}
+
+
+
+/*termina los estilos del pie de pagina*/
+
+/* Estilos generales para la barra de navegación */
+.nav1 {
+  background-color: #535633; /* Color de fondo de la navegación */
+  margin-top: 0; /* Posiciona la navegación en la parte superior */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 79px; /* Altura de la navegación */
+  padding: 18px;
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  position: relative;
+  justify-content: right;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Estilo del logo */
+.logoheader {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Estilos para la lista del menú */
+.nav1_ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Muestra los elementos en una fila */
+  justify-content: left; /* Espacia los elementos de manera uniforme */
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+/* Estilos para los enlaces del menú */
+.nav1_ul li a {
+  color: white; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+
+
+
+
+
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+
+  body {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  .banner {
+    width: auto !important;
+}
+
+.product-carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+
+.contenedor-flex {
+flex-direction: column;
+}
+
+.instagram-btn {
+    margin-left: 23vw ;
+}
+
+.contenedor-servicios {
+    margin-bottom: 50px;
+}
+
+.instagram-feed {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.instagram-feed a {
+  margin: 10px;
+  max-width: 44%;
+  flex-grow: 1;
+}
+
+
+
+  /* Botón para mostrar el menú en móviles */
+  .menu-toggle {
+      display: inline-block;
+      background-color: #535633; /* Color de fondo del botón */
+      color: white; /* Color del texto del botón */
+      border: none;
+      padding: 10px;
+      cursor: pointer; /* Cambia el cursor a una mano */
+  }
+
+  .menu-toggle img {
+    position: relative;
+    z-index: 1000000;
+    width: 27px;
+    filter: invert(1);
+  }
+
+  /* Estilos para la lista del menú en móviles */
+  .nav1_ul {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column; /* Muestra los elementos en una columna */
+      position: absolute;
+      top: 100%; /* Posiciona el menú debajo del botón */
+      left: 0;
+      width: 100%; /* Ocupa todo el ancho disponible */
+      background-color: #535633; /* Color de fondo del menú */
+      z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+      height: 92vh;
+      justify-content: center;
+  }
+
+  .nav1_ul li {
+      text-align: center; /* Centra el texto de los elementos */
+      padding: 15px 0; /* Espaciado vertical de los elementos */
+      border-top: 1px solid white; /* Línea divisoria entre los elementos */
+  }
+
+  /* Clase para mostrar el menú cuando se activa */
+  .nav1_ul.show {
+      display: flex; /* Muestra el menú */
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .logoheader {
+    margin: 0;
+  }
+
+
+  .im1 {
+    width: 50vw;
+    height: 70vw;
+  }
+
+  .recuadro {
+    width: auto;
+    height: auto;
+  }
+
+  .recuadro p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .personalizacion , .otros-servicios {
+    padding: 0;
+    border: 1px solid red;
+  }
+
+  .contenedor-servicioss {
+    width: 100%;
+  }
+
+  .otros-servicioss {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+ 
+  .button-serv{
+    background-color: transparent;
+  }
+
+
+  .testimonio {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+
+  .whatsapp-float {
+    bottom: 90px;
+  }
+}
+
+
+
+
+ 
+

@@ -1,0 +1,360 @@
+ body{
+    background-color: #efebe4;
+  font-family: 'montserrat';
+  margin: 0%;
+  padding: 0%;
+ }
+ 
+ 
+ /*estilos del menu*/
+ .nav1{
+    background-color:#535633;
+    margin-top: 0%; /* Lo sitúa en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 15%;
+    padding: 17px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+/*imagen del menu*/
+.logoheader{
+    width: 85px;
+    height: 82px;
+    float: left;
+    margin-left: 15%;
+}
+ /* Estilos para el menú de navegación */
+ nav ul li {
+    position: relative; /* Establecer posición relativa para el elemento li */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #efebe4; /* Color del texto del enlace */
+    font-weight: bold; /* Negrita */
+    font-family: 'montserrat'; /* Fuente */
+    font-size: 1.1em; /* Tamaño del texto del enlace */
+    position: relative; /* Establecer posición relativa para el enlace */
+}
+
+nav ul li a::before {
+    content: ''; /* Agregar contenido pseudo-elemento */
+    position: absolute; /* Establecer posición absoluta */
+    top: 18px; /* Alinear al tope */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Anchura del 100% */
+    height: 2px; /* Altura de la línea */
+    background-color: rgb(239, 232, 232); /* Color de la línea */
+    transform: scaleX(0); /* Escalar la línea en el eje X a 0 */
+    transform-origin: left; /* Establecer origen de transformación a la izquierda */
+    transition: transform 0.3s ease; /* Transición de la transformación */
+  }
+
+  nav ul li a:hover::before {
+    transform: scaleX(1); /* Escalar la línea en el eje X a 1 (100%) */
+  }
+
+  nav {
+    text-align: center; /* Centrar los elementos del menú */
+    padding: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    display: inline; /* Mostrar los elementos en línea */
+    margin-right: 50px; /* Margen derecho entre elementos */
+  }
+
+  nav ul li a:hover {
+    color: #b1b682; /* Cambiar color del texto al pasar el ratón */
+  }
+ /* Termina el menu*/
+
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* ajusta el ancho según sea necesario */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* transición suave para el zoom */
+}
+
+.item:hover img {
+    transform: scale(1.1); /* aumenta el tamaño al hacer hover */
+}
+
+/*estilos del boton flotante del whasAPP*/
+.whatsapp-float {
+    position: fixed; /* Fija el botón en la ventana del navegador */
+    bottom: 20px; /* Distancia desde el borde inferior */
+    right: 20px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+  .whatsapp-float img {
+    width: 60px; /* Ajusta el tamaño del icono de WhatsApp */
+    height: auto;
+    border-radius: 50%; /* Para que el botón tenga forma de círculo */
+}
+/*termina los estilos del boton flotante*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    color: #535633;
+}
+h1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+ /*Estilos pie de pagina*/
+ footer {
+    background-color: #535633;
+    text-align: center;
+    height: 350PX;
+    font-family: montserrat;
+}
+.column {
+    width: 30%;
+    height: -30%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.column img{
+  width: 100px;
+  height: 100px;
+  margin-left: -300px;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+.column h3 {
+  margin-left: -10px;
+    margin-top: 60px;
+    font-size: 11px;
+}
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+.column ul li {
+    margin-bottom: 1px;
+    text-align: justify;
+   
+}
+.column ul li a {
+    color: #efebe4;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: montserrat;
+}
+.column ul li a:hover {
+    text-decoration: none;
+}
+.clearfix {
+    clear: both;
+}
+h4{
+    color: #efebe4; 
+    margin-bottom: -25px;
+}
+h3{
+    color: #efebe4;
+}
+.sgn{
+  margin-top: 260px;
+  font-size: 11px;
+  float: left;
+  margin-left: -440px;
+  margin-bottom: 40px;
+  font-family: montserrat;
+}
+.text{
+  text-align: -3pc;
+  margin-top: 1px;
+  font-size: 13px;
+  float: left;
+  font-family: montserrat;
+  margin-left: 19px;
+}
+.tli{
+  margin-left: 150px;
+}
+.contata{
+  margin-left: -300px ;
+  font-size: 11PX;
+  margin-top: 60px;
+}
+.terceco{
+  margin-left: -1px;
+  margin-top: 5px;
+}
+.container-footer {
+	width: 100%;
+  height: 40px;
+	background:  #686b46; 
+    margin-top: -50px;
+}
+.copyright {
+  color: #efebe4; 
+  font-size: 15px;
+}
+.bpie {
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 100px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: -2px;
+    margin-top: 30px;
+}
+.bpie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*termina los estilos del pie de pagina*/
+H1{
+    font-size: 34px;
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    letter-spacing: .4em;
+    letter-spacing: .17em; 
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #535633;
+    margin-left: 500px;
+    margin-top: 50px;
+  
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: #efebe4;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    width: 1300px;
+    height: 600px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-container h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: #535633;
+    text-align: center;
+    font-family: MONTSERRAT;
+    letter-spacing: .5em;
+    letter-spacing: .18em; 
+    margin-bottom: 20PX;
+}
+
+.text-container p {
+    margin: 0;
+    font-size: 25px;
+    color: #555;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    p {
+        font-size: 23px !important; 
+    }
+
+    h1 {
+        margin: 0;
+        
+    }
+
+    .product-section {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .product-card {
+        width: 100vw;
+        height: auto;
+        margin-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+    }
+    
+    .image-container img {
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+
+    .footermovil {
+        margin-bottom: 30px;
+    }
+
+}
