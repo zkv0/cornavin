@@ -275,7 +275,12 @@ h3{
         padding: 0;
         width: 90vw;
         height: auto;
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
 
     p {
         padding: 0;
@@ -289,6 +294,19 @@ h3{
         padding: 0;
         margin: 30px 0;
     }
+
+
+    .whatsapp-float {
+        bottom: 80px;
+    }
+
+    .aparecer {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
 
     
 }
