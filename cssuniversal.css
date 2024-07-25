@@ -170,6 +170,8 @@ ul {
 
 
 
+
+
 @media (max-width: 768px) {
     .nav1 {
         display: none !important;
@@ -184,6 +186,8 @@ ul {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-around;
+        height: 70px;
+        box-sizing: border-box;
     }
 
     .logoheader {
@@ -199,11 +203,11 @@ ul {
         align-items: center;
         background-color: #535633;
         box-sizing: border-box;
-        padding: 15px 0px;
+        padding: 5px 0px;
     }
 
     .header_movillogo img {
-        width: 80vw;
+        width: 70px;
     }
 
 
