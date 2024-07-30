@@ -17,6 +17,16 @@ body{
     display: flex;
 
 }
+
+
+.img_inde {
+  position: relative;
+  top: -500px;
+}
+
+
+
+
 /*imagen del menu*/
 .logoheader{
     width: 85px;
@@ -877,6 +887,11 @@ flex-direction: column;
 
   .whatsapp-float {
     bottom: 90px;
+  }
+
+
+  .img_inde {
+    position: static;
   }
 }
 
