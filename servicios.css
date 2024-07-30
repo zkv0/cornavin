@@ -141,19 +141,20 @@ article {
   }
   article h2 {
     margin: 0 0 17px 0;
-    font-family: "montserrat";
     font-size: 1.9rem;
     letter-spacing: 0.04em;
     color: var(--title-color);
     transition: color 0.3s ease-out;
     font-size: 20px;
     padding: 6px;
+    font-family: sans-serif;
+
 }
 article p{
     font-size: 22px;
     text-align: center;
     padding: 10px;
-    font-family: 'monserrat';
+    color: var(--title-color);
 }
 figure {
     margin: 0;
@@ -467,7 +468,7 @@ margin-top: 0.1px;
 margin-inline: -1px;
 }
 .lista3{
-  text-align: center;
+  text-align: left;
   font-size: 14px;
 margin-top: -32px;
 margin-inline: -0.1%;
