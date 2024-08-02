@@ -129,12 +129,12 @@ h2.aparecer {
 /*estilos de los parrafos*/
 p {
     font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente elegante y legible */
-    font-size: 18px; /* Tamaño de fuente legible */
+    font-size: 17px; /* Tamaño de fuente legible */
     color: #000000; /* Color de texto oscuro */
     line-height: 2; /* Espaciado entre líneas para mejorar la legibilidad */
     margin-bottom: 25px; /* Espaciado inferior para separar de otros elementos */  
-    padding-left: 110px;
-    padding-right: 130px;
+    padding-left: 109px;
+    padding-right: 129px;
     text-align: center;
     transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
     transition: transform 1.5s ease-in-out; /* Transición suave de transformación */
