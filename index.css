@@ -35,6 +35,7 @@ body{
     margin-left: 15%;
     position: absolute;
     z-index: 100000000000;
+    top: 15px;
 }
  /* Estilos para el menú de navegación */
  nav ul li {
