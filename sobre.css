@@ -19,8 +19,8 @@ body{
 }
 /*imagen del menu*/
 .logoheader{
-    width: 85px;
-    height: 82px;
+    width: 50px;
+    height: 50px;
     float: left;
     margin-left: 15%;
 }
@@ -133,8 +133,8 @@ p {
     color: #000000; /* Color de texto oscuro */
     line-height: 2; /* Espaciado entre líneas para mejorar la legibilidad */
     margin-bottom: 25px; /* Espaciado inferior para separar de otros elementos */  
-    padding-left: 110px;
-    padding-right: 130px;
+    padding-left: 131px;
+    padding-right: 131px;
     text-align: center;
     transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
     transition: transform 1.5s ease-in-out; /* Transición suave de transformación */
